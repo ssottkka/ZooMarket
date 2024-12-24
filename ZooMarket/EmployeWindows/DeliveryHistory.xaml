@@ -1,0 +1,103 @@
+﻿<Window x:Class="ZooMarket.EmployeWindows.DeliveryHistory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMarket.EmployeWindows"
+        mc:Ignorable="d"
+        Title="История поставок" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Кнопка "Назад" в левом верхнем углу -->
+        <Button x:Name="BackButton" 
+                Content="Назад" 
+                Width="70" 
+                Height="30" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="0,0,0,10" 
+                Background="#FF5733"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="BackButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <!-- Панель фильтров -->
+        <StackPanel Grid.Row="1" 
+                    Orientation="Horizontal" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Margin="0,10,0,20">
+            <!-- Фильтр по названию товара -->
+            <TextBlock Text="Название товара:" 
+                       VerticalAlignment="Center" 
+                       Margin="0,0,10,0"
+                       Foreground="#333333"/>
+            <ComboBox x:Name="FilterProductComboBox" 
+                      Width="150" 
+                      Margin="0,0,20,0"
+                      Background="#FFFFFF"
+                      BorderBrush="#CCCCCC"
+                      Padding="5"
+                      DisplayMemberPath="Название"
+                      SelectedValuePath="ТоварID"/>
+
+            <!-- Фильтр по дате -->
+            <TextBlock Text="Дата поставки:" 
+                       VerticalAlignment="Center" 
+                       Margin="0,0,10,0"
+                       Foreground="#333333"/>
+            <DatePicker x:Name="FilterDatePicker" 
+                        Width="150" 
+                        Margin="0,0,20,0"
+                        Background="#FFFFFF"
+                        BorderBrush="#CCCCCC"
+                        Padding="5"/>
+
+            <!-- Кнопка "Применить фильтр" -->
+            <Button x:Name="ApplyFilterButton" 
+                    Content="Применить фильтр" 
+                    Width="150" 
+                    Height="30" 
+                    Background="#4CAF50"
+                    Foreground="White"
+                    BorderBrush="Transparent"
+                    Click="ApplyFilterButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
+        <!-- Таблица для отображения истории поставок -->
+        <DataGrid x:Name="DeliveryDataGrid" 
+                  Grid.Row="2" 
+                  Margin="0,0,0,10"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  Background="#FFFFFF"
+                  BorderBrush="#CCCCCC"
+                  RowBackground="#FFFFFF"
+                  AlternatingRowBackground="#F0F0F0"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="#DDDDDD"
+                  VerticalGridLinesBrush="#DDDDDD">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Поставка ID" Binding="{Binding ПоставкаID}" Width="*"/>
+                <DataGridTextColumn Header="Название товара" Binding="{Binding НазваниеТовара}" Width="*"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Количество}" Width="*"/>
+                <DataGridTextColumn Header="Дата поставки" Binding="{Binding ДатаПоставки, StringFormat=d}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,129 @@
+﻿<Window x:Class="ZooMarket.EmployeWindows.Employe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMarket.EmployeWindows"
+        mc:Ignorable="d"
+        Title="Панель сотрудника" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Кнопка "Выйти" в левом верхнем углу -->
+        <Button x:Name="LogoutButton" 
+                Content="Выйти" 
+                Width="70" 
+                Height="30" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="10,10,0,0" 
+                Background="#FF5733"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="LogoutButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <!-- Контейнер для кнопок по центру -->
+        <StackPanel Grid.Row="1" Grid.Column="1" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Orientation="Vertical">
+            <!-- Кнопка "Просмотр каталога товаров" -->
+            <Button x:Name="CatalogCheck" 
+                    Content="Просмотр каталога товаров" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="CatalogCheckButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Продажа" -->
+            <Button x:Name="SaleButton" 
+                    Content="Продажа" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="SaleButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Отчёт о продажах" -->
+            <Button x:Name="SaleReportButton" 
+                    Content="Отчёт о продажах" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="SaleReportButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Прием поставки" -->
+            <Button x:Name="AcceptDelivery" 
+                    Content="Прием поставки" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="AcceptDeliveryButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Списание товаров" -->
+            <Button x:Name="DeleteProduct" 
+                    Content="Списание товаров" 
+                    Width="400" 
+                    Height="50"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="DeleteProduct_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

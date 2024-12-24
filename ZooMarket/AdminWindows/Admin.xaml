@@ -1,0 +1,139 @@
+﻿<Window x:Class="ZooMarket.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMarket"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Кнопка "Выйти" в левом верхнем углу -->
+        <Button x:Name="LogoutButton" 
+                Content="Выйти" 
+                Width="70" 
+                Height="30" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="10,10,0,0" 
+                Background="#FF5733"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="LogoutButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <!-- Надпись "Админ-панель" по центру -->
+        <TextBlock Grid.Row="0" Grid.Column="1" 
+                   Text="Админ-панель" 
+                   FontSize="28" 
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" 
+                   Margin="0,20,0,30"
+                   Foreground="#333333"/>
+
+        <!-- Контейнер для кнопок по центру -->
+        <StackPanel Grid.Row="1" Grid.Column="1" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Orientation="Vertical">
+            <!-- Кнопка "Добавить сотрудника" -->
+            <Button x:Name="AddEmployeeButton" 
+                    Content="Добавить сотрудника" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="AddEmployeeButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Редактировать данные сотрудника" -->
+            <Button x:Name="EditEmployeeButton" 
+                    Content="Редактировать данные сотрудника" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="EditEmployeeButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Уволить сотрудника" -->
+            <Button x:Name="DeleteEmployeeButton" 
+                    Content="Уволить сотрудника" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="DeleteEmployeeButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Отслеживание входов" -->
+            <Button x:Name="TrackLoginsButton" 
+                    Content="Отслеживание входов" 
+                    Width="400" 
+                    Height="50" 
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="TrackLoginsButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+
+            <!-- Кнопка "Просмотр пользователей" -->
+            <Button x:Name="ViewUsersButton" 
+                    Content="Просмотр пользователей" 
+                    Width="400" 
+                    Height="50"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Background="#E0E0E0"
+                    Foreground="#333333"
+                    BorderBrush="Transparent"
+                    Margin="0,0,0,20"
+                    Click="ViewUsersButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

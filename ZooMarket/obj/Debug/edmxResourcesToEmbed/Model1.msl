@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ZooMarketModelContainer" CdmEntityContainer="ZooMarketEntities1">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ZooMarketModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="БлокировкаПользователей">
+      <EntityTypeMapping TypeName="ZooMarketModel.БлокировкаПользователей">
+        <MappingFragment StoreEntitySet="БлокировкаПользователей">
+          <ScalarProperty Name="БлокировкаID" ColumnName="БлокировкаID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Причина" ColumnName="Причина" />
+          <ScalarProperty Name="IPадрес" ColumnName="IPадрес" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Должности">
+      <EntityTypeMapping TypeName="ZooMarketModel.Должности">
+        <MappingFragment StoreEntitySet="Должности">
+          <ScalarProperty Name="ДолжностьID" ColumnName="ДолжностьID" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ЗаявкиНаПокупку">
+      <EntityTypeMapping TypeName="ZooMarketModel.ЗаявкиНаПокупку">
+        <MappingFragment StoreEntitySet="ЗаявкиНаПокупку">
+          <ScalarProperty Name="ЗаявкаID" ColumnName="ЗаявкаID" />
+          <ScalarProperty Name="ДиректорID" ColumnName="ДиректорID" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Статус" ColumnName="Статус" />
+          <ScalarProperty Name="ПоставщикID" ColumnName="ПоставщикID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ИзмененияЗП">
+      <EntityTypeMapping TypeName="ZooMarketModel.ИзмененияЗП">
+        <MappingFragment StoreEntitySet="ИзмененияЗП">
+          <ScalarProperty Name="ИзмененияID" ColumnName="ИзмененияID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="СтараяЗП" ColumnName="СтараяЗП" />
+          <ScalarProperty Name="НоваяЗП" ColumnName="НоваяЗП" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Причина" ColumnName="Причина" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ИсторияВходов">
+      <EntityTypeMapping TypeName="ZooMarketModel.ИсторияВходов">
+        <MappingFragment StoreEntitySet="ИсторияВходов">
+          <ScalarProperty Name="ЛогID" ColumnName="ЛогID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="ДатаВхода" ColumnName="ДатаВхода" />
+          <ScalarProperty Name="IPадрес" ColumnName="IPадрес" />
+          <ScalarProperty Name="Статус" ColumnName="Статус" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="КатегорииТоваров">
+      <EntityTypeMapping TypeName="ZooMarketModel.КатегорииТоваров">
+        <MappingFragment StoreEntitySet="КатегорииТоваров">
+          <ScalarProperty Name="КатегорияID" ColumnName="КатегорияID" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Клиенты">
+      <EntityTypeMapping TypeName="ZooMarketModel.Клиенты">
+        <MappingFragment StoreEntitySet="Клиенты">
+          <ScalarProperty Name="КлиентID" ColumnName="КлиентID" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="КонтактноеЛицо" ColumnName="КонтактноеЛицо" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Поставки">
+      <EntityTypeMapping TypeName="ZooMarketModel.Поставки">
+        <MappingFragment StoreEntitySet="Поставки">
+          <ScalarProperty Name="ПоставкаID" ColumnName="ПоставкаID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="ДатаПоставки" ColumnName="ДатаПоставки" />
+          <ScalarProperty Name="ПоставщикID" ColumnName="ПоставщикID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Поставщики">
+      <EntityTypeMapping TypeName="ZooMarketModel.Поставщики">
+        <MappingFragment StoreEntitySet="Поставщики">
+          <ScalarProperty Name="ПоставщикID" ColumnName="ПоставщикID" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Адрес" ColumnName="Адрес" />
+          <ScalarProperty Name="Телефон" ColumnName="Телефон" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="КонтактноеЛицо" ColumnName="КонтактноеЛицо" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Премии">
+      <EntityTypeMapping TypeName="ZooMarketModel.Премии">
+        <MappingFragment StoreEntitySet="Премии">
+          <ScalarProperty Name="ПремияID" ColumnName="ПремияID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Причина" ColumnName="Причина" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Продажи">
+      <EntityTypeMapping TypeName="ZooMarketModel.Продажи">
+        <MappingFragment StoreEntitySet="Продажи">
+          <ScalarProperty Name="ПродажаID" ColumnName="ПродажаID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="Дата" ColumnName="Дата" />
+          <ScalarProperty Name="Сумма" ColumnName="Сумма" />
+          <ScalarProperty Name="КлиентID" ColumnName="КлиентID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СоставЗаявки">
+      <EntityTypeMapping TypeName="ZooMarketModel.СоставЗаявки">
+        <MappingFragment StoreEntitySet="СоставЗаявки">
+          <ScalarProperty Name="ЗаявкиID" ColumnName="ЗаявкиID" />
+          <ScalarProperty Name="ТоварID" ColumnName="ТоварID" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СоставПоставки">
+      <EntityTypeMapping TypeName="ZooMarketModel.СоставПоставки">
+        <MappingFragment StoreEntitySet="СоставПоставки">
+          <ScalarProperty Name="ПоставкаID" ColumnName="ПоставкаID" />
+          <ScalarProperty Name="ТоварID" ColumnName="ТоварID" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СоставПродажи">
+      <EntityTypeMapping TypeName="ZooMarketModel.СоставПродажи">
+        <MappingFragment StoreEntitySet="СоставПродажи">
+          <ScalarProperty Name="ПродажаID" ColumnName="ПродажаID" />
+          <ScalarProperty Name="ТоварID" ColumnName="ТоварID" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Сотрудники">
+      <EntityTypeMapping TypeName="ZooMarketModel.Сотрудники">
+        <MappingFragment StoreEntitySet="Сотрудники">
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="ДолжностьID" ColumnName="ДолжностьID" />
+          <ScalarProperty Name="Зарплата" ColumnName="Зарплата" />
+          <ScalarProperty Name="ДатаПриема" ColumnName="ДатаПриема" />
+          <ScalarProperty Name="ДатаУвольнения" ColumnName="ДатаУвольнения" />
+          <ScalarProperty Name="Логин" ColumnName="Логин" />
+          <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СписаниеТоваров">
+      <EntityTypeMapping TypeName="ZooMarketModel.СписаниеТоваров">
+        <MappingFragment StoreEntitySet="СписаниеТоваров">
+          <ScalarProperty Name="СписаниеID" ColumnName="СписаниеID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="ТоварID" ColumnName="ТоварID" />
+          <ScalarProperty Name="ДатаСписания" ColumnName="ДатаСписания" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="Причина" ColumnName="Причина" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СтатусВхода">
+      <EntityTypeMapping TypeName="ZooMarketModel.СтатусВхода">
+        <MappingFragment StoreEntitySet="СтатусВхода">
+          <ScalarProperty Name="СтатусID" ColumnName="СтатусID" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="СтатусыЗаявки">
+      <EntityTypeMapping TypeName="ZooMarketModel.СтатусыЗаявки">
+        <MappingFragment StoreEntitySet="СтатусыЗаявки">
+          <ScalarProperty Name="СтатусID" ColumnName="СтатусID" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ТипТовара">
+      <EntityTypeMapping TypeName="ZooMarketModel.ТипТовара">
+        <MappingFragment StoreEntitySet="ТипТовара">
+          <ScalarProperty Name="ТипТовараID" ColumnName="ТипТовараID" />
+          <ScalarProperty Name="Наименование" ColumnName="Наименование" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Товары">
+      <EntityTypeMapping TypeName="ZooMarketModel.Товары">
+        <MappingFragment StoreEntitySet="Товары">
+          <ScalarProperty Name="ТоварID" ColumnName="ТоварID" />
+          <ScalarProperty Name="Название" ColumnName="Название" />
+          <ScalarProperty Name="Описание" ColumnName="Описание" />
+          <ScalarProperty Name="Цена" ColumnName="Цена" />
+          <ScalarProperty Name="Количество" ColumnName="Количество" />
+          <ScalarProperty Name="СрокГодности" ColumnName="СрокГодности" />
+          <ScalarProperty Name="ТипТовара" ColumnName="ТипТовара" />
+          <ScalarProperty Name="ПоставщикID" ColumnName="ПоставщикID" />
+          <ScalarProperty Name="КатегорияID" ColumnName="КатегорияID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Увольнения">
+      <EntityTypeMapping TypeName="ZooMarketModel.Увольнения">
+        <MappingFragment StoreEntitySet="Увольнения">
+          <ScalarProperty Name="УвольнениеID" ColumnName="УвольнениеID" />
+          <ScalarProperty Name="СотрудникID" ColumnName="СотрудникID" />
+          <ScalarProperty Name="ДатаУвольнения" ColumnName="ДатаУвольнения" />
+          <ScalarProperty Name="Причина" ColumnName="Причина" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище ZooMarketModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище ZooMarketModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище ZooMarketModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище ZooMarketModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ZooMarketModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище ZooMarketModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ZooMarketModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище ZooMarketModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище ZooMarketModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

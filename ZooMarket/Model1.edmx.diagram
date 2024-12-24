@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2cf9a605d67c4dcf9def5b19bdd60a93" Name="Diagram1">
+        <EntityTypeShape EntityType="ZooMarketModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.БлокировкаПользователей" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Должности" Width="1.5" PointX="0.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.ЗаявкиНаПокупку" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.ИзмененияЗП" Width="1.5" PointX="5.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.ИсторияВходов" Width="1.5" PointX="8.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.КатегорииТоваров" Width="1.5" PointX="6" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Клиенты" Width="1.5" PointX="6" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Поставки" Width="1.5" PointX="8.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Поставщики" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Премии" Width="1.5" PointX="5.25" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Продажи" Width="1.5" PointX="8.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СоставЗаявки" Width="1.5" PointX="10.5" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СоставПоставки" Width="1.5" PointX="10.5" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СоставПродажи" Width="1.5" PointX="10.5" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Сотрудники" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СписаниеТоваров" Width="1.5" PointX="11.25" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СтатусВхода" Width="1.5" PointX="6" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.СтатусыЗаявки" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.ТипТовара" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Товары" Width="1.5" PointX="8.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ZooMarketModel.Увольнения" Width="1.5" PointX="5.25" PointY="40.5" IsExpanded="true" />
+        <AssociationConnector Association="ZooMarketModel.FK__Блокировк__Сотру__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Блокировк__Сотру__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Сотрудник__Должн__01142BA1" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Сотрудник__Должн__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Дирек__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Дирек__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Поста__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Поста__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Стату__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ЗаявкиНаП__Стату__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставЗая__Заявк__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставЗая__Заявк__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Изменения__Сотру__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Изменения__Сотру__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ИсторияВх__Сотру__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ИсторияВх__Сотру__778AC167" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ИсторияВх__Стату__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__ИсторияВх__Стату__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__Категори__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__Категори__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Продажи__КлиентI__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Продажи__КлиентI__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Поставки__Постав__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Поставки__Постав__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Поставки__Сотруд__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Поставки__Сотруд__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПос__Поста__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__Поставщи__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__Поставщи__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Премии__Сотрудни__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Премии__Сотрудни__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Продажи__Сотрудн__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Продажи__Сотрудн__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПро__Прода__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПро__Прода__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставЗая__Товар__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПос__Товар__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПос__Товар__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СоставПро__Товар__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СписаниеТ__Сотру__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СписаниеТ__Сотру__7C4F7684" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Увольнени__Сотру__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Увольнени__Сотру__787EE5A0" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__СписаниеТ__Товар__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__ТипТовар__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="ZooMarketModel.FK__Товары__ТипТовар__47DBAE45" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

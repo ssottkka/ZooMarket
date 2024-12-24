@@ -1,0 +1,144 @@
+﻿<Window x:Class="ZooMarket.EmployeWindows.EmployeSaleProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZooMarket.EmployeWindows"
+        mc:Ignorable="d"
+        Title="Продажа товаров" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <!-- Добавлен столбец для кнопки "Добавить товар" -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Кнопка "Выйти" в левом верхнем углу -->
+        <Button x:Name="LogoutButton" 
+                Content="Выйти" 
+                Width="70" 
+                Height="30" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="0,0,0,20" 
+                Background="#FF5733"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="LogoutButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <!-- ComboBox для выбора категории товара -->
+        <TextBlock Grid.Row="0" Grid.Column="0" 
+                   Text="Категория:" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,10"
+                   Foreground="#333333"/>
+        <ComboBox x:Name="CategoryComboBox" 
+                  Grid.Row="0" Grid.Column="1" 
+                  Margin="0,0,0,10" 
+                  Background="#FFFFFF"
+                  BorderBrush="#CCCCCC"
+                  Padding="5"
+                  SelectionChanged="CategoryComboBox_SelectionChanged"/>
+
+        <!-- ComboBox для выбора товара -->
+        <TextBlock Grid.Row="1" Grid.Column="0" 
+                   Text="Товар:" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,10"
+                   Foreground="#333333"/>
+        <ComboBox x:Name="ProductComboBox" 
+                  Grid.Row="1" Grid.Column="1" 
+                  Margin="0,0,0,10" 
+                  Background="#FFFFFF"
+                  BorderBrush="#CCCCCC"
+                  Padding="5"/>
+
+        <!-- Поле ввода для количества товара -->
+        <TextBlock Grid.Row="2" Grid.Column="0" 
+                   Text="Количество:" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,10"
+                   Foreground="#333333"/>
+        <TextBox x:Name="QuantityTextBox" 
+                 Grid.Row="2" Grid.Column="1" 
+                 Margin="0,0,0,10" 
+                 Background="#FFFFFF"
+                 BorderBrush="#CCCCCC"
+                 Padding="5"/>
+
+        <!-- Кнопка "Добавить товар" -->
+        <Button x:Name="AddProductButton" 
+                Grid.Row="2" Grid.Column="2" 
+                Content="Добавить товар" 
+                Width="120" 
+                Height="30" 
+                HorizontalAlignment="Left" 
+                Margin="10,0,0,10" 
+                Background="#2196F3"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="AddProductButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+
+        <!-- Таблица для выбора нескольких товаров -->
+        <TextBlock Grid.Row="3" Grid.Column="0" 
+                   Text="Товары для продажи:" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,10"
+                   Foreground="#333333"
+                   FontWeight="Bold"/>
+        <DataGrid x:Name="SaleProductsDataGrid" 
+                  Grid.Row="3" Grid.Column="1" 
+                  Grid.RowSpan="2" 
+                  Margin="0,0,0,10"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="False"
+                  Background="#FFFFFF"
+                  BorderBrush="#CCCCCC"
+                  RowBackground="#FFFFFF"
+                  AlternatingRowBackground="#F0F0F0"
+                  HeadersVisibility="Column"
+                  HorizontalGridLinesBrush="#DDDDDD"
+                  VerticalGridLinesBrush="#DDDDDD">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Товар" Binding="{Binding Название}" Width="*"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Количество}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Кнопка "Продать" -->
+        <Button x:Name="SellButton" 
+                Grid.Row="5" Grid.ColumnSpan="3" 
+                Content="Продать" 
+                Width="150" 
+                Height="40" 
+                HorizontalAlignment="Center" 
+                Margin="0,20,0,0" 
+                Background="#4CAF50"
+                Foreground="White"
+                BorderBrush="Transparent"
+                Click="SellButton_Click">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Gray"/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
